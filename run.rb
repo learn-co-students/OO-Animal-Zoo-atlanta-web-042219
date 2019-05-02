@@ -9,9 +9,20 @@ choco = Animal.new("bear", 500, "Mr. Chocolate")
 hippo = Animal.new("hippo", 3000, "Lu")
 duck = Animal.new("duck", 3, "Quack")
 
-cobb_land = Zoo.new("Cobbland Zoo", "Cobbland")
+cobb_land = Zoo.new("Cobbland Zoo", "Cobb Town")
+nocito = Zoo.new("Nocito Zoo", "Melrose")
 
 puts "#{cobb_land.name} is the best zoo in the #{cobb_land.location} area."
+
+choco.zoo = "Nocito Zoo"
+hippo.zoo = "Nocito Zoo"
+duck.zoo = "Nocito Zoo"
+
+moneca.zoo = "Cobbland Zoo"
+gato.zoo = "Cobbland Zoo"
+doggy.zoo = "Cobbland Zoo"
+
+binding.pry
 
 Zoo.all
 
@@ -33,10 +44,6 @@ doggy.species
 
 Animal.all
 
-choco.zoo = "Melrose Zoo"
-
 Animal.find_by_species("cat")
 
-
-binding.pry
 puts "done"

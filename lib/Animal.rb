@@ -3,7 +3,7 @@ class Animal
     attr_accessor :weight, :zoo
 
     @@all = []
-    def initialize(species, weight, nickname)
+    def initialize(species, weight, nickname, zoo = nil)
         @species = species
         @nickname = nickname
         @weight = weight
