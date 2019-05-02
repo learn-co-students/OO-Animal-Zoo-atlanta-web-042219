@@ -21,7 +21,7 @@ class Zoo
       end
     end
   end
-
+#works ^
   def animal_species
     zoos_species = []
     Animal.all.each do |animal_obj|
@@ -31,11 +31,12 @@ class Zoo
     end
     zoos_species.uniq
   end
+  #works ^
 
   def find_by_species(species)
     specific_animal_species = []
     Animal.all.each do |animal_obj|
-      if animal_obj.name == animal_obj.zoo
+      if animal_obj.zoo == self.name
         if animal_obj.species == species
           specific_animal_species << animal_obj
         end
@@ -43,7 +44,7 @@ class Zoo
     end
     specific_animal_species
   end
-
+#works ^
 
   def animal_nicknames
     zoo_animal_nicknames = []
@@ -54,6 +55,7 @@ class Zoo
     end
     zoo_animal_nicknames
   end
+  #works ^
 
 #not sure why this needs to be a class method seems like it would work without self????
 
@@ -66,6 +68,6 @@ class Zoo
     end
     zoos_within_location
   end
-
+#works ^
 
 end

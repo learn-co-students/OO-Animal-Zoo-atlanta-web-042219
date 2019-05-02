@@ -16,9 +16,11 @@ class Animal
   def self.all
     @@all
   end
+  #works
 
 #put zoo method in accessor because read me didnt define whether i can be changed
 #animal also doesnt initialize with a zoo meaning it would be input later? so i left open to change.
+#decided to initialize with a zoo in the Animal class so this could work
 
   def self.find_by_species(species)
   animals_with_matched_species = []
@@ -29,7 +31,7 @@ class Animal
     end
     animals_with_matched_species
   end
-
+#works
 
 
 end
