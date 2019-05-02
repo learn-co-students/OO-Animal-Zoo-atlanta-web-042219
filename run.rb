@@ -6,10 +6,12 @@ zoo_atlanta = Zoo.new("Zoo Atlanta", "Atlanta")
 sd_zoo = Zoo.new("San Diego Zoo", "San Diego")
 zootopia = Zoo.new("Zootopia", "The Movies")
 
-reverend = Animal.new("dug", 50, "Beverend")
-apollo = Animal.new("lion", 12, "Polly")
-lemon = Animal.new("trash panda", 15, "Lem-Lem")
-pip = Animal.new("floof", 8, "Pip-a-Lip")
+reverend = Animal.new("devil dug", 50, "Beverend", zootopia)
+apollo = Animal.new("sweet angel", 12, "Polly", sd_zoo)
+lemon = Animal.new("chonker", 16, "Lem-Lem", zoo_atlanta)
+pip = Animal.new("sweet angel", 8, "Rickety Pippet", sd_zoo)
+paul = Animal.new("chonker", 15, "Pawaul", zoo_atlanta)
+monte = Animal.new("devil dug", 70, "Monte Carlo", zootopia)
 
 binding.pry
 puts "done"
